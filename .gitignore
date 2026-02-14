@@ -1,0 +1,28 @@
+# Executabile compilate
+*.exe
+*.out
+moldova_navigator
+romania_navigator
+a.out
+
+# Build directories
+build/
+bin/
+obj/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+temp/
+
+# System files
+Thumbs.db
+desktop.ini
