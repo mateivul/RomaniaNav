@@ -1,4 +1,472 @@
+Last login: Sat Feb 14 17:41:32 on ttys004
+matei ~
+❯ cd Personal/Projects/C++/MapNav/moldova_navigator_v1
+matei ~/Personal/Projects/C++/MapNav/moldova_navigator_v1
+❯ code
+matei ~/Personal/Projects/C++/MapNav/moldova_navigator_v1
+❯ code main.cpp
+matei ~/Personal/Projects/C++/MapNav/moldova_navigator_v1
+❯ cd..
+zsh: command not found: cd..
+matei ~/Personal/Projects/C++/MapNav/moldova_navigator_v1
+❯ cd ..
+matei ~/.Trash
+❯ cd
+matei ~
+❯ cd Personal/Projects/C++/MapNav/RomaniaNav
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ mkdir -p v1_moldova_console/src
+mkdir -p v2_moldova_html/src
+mkdir -p v3_romania_console/src
+mkdir -p v4_romania_html_complete/src
+mkdir -p docs/screenshots
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+  UW PICO 5.09                           New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  [ New file ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell
+❯ ls -la
+
+total 0
+  UW PICO 5.09                           New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  [ New file ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell
+drwxr-xr-x  7 matei  staff  224 Feb 14 18:19 .
+drwxr-xr-x  4 matei  staff  128 Feb 14 18:18 ..
+drwxr-xr-x@ 3 matei  staff   96 Feb 14 18:19 docs
+  UW PICO 5.09                           New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               [ Read 332 lines ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell
+drwxr-xr-x@ 3 matei  staff   96 Feb 14 18:19 v1_moldova_console
+drwxr-xr-x@ 3 matei  staff   96 Feb 14 18:19 v2_moldova_html
+drwxr-xr-x@ 3 matei  staff   96 Feb 14 18:19 v3_romania_console
+drwxr-xr-x@ 3 matei  staff   96 Feb 14 18:19 v4_romania_html_complete
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ cp ~/Downloads/main.cpp v1_moldova_console/src/main.cpp
+
+cp: /Users/matei/Downloads/main.cpp: Operation not permitted
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ cp ~/Downloads/main.cpp v1_moldova_console/src/main.cpp
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ ls v1_moldova_console/src/
+
+main.cpp
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ nano .gitignore
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ nano README.md
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ cd v1_moldova_console
+nano README.md
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav/v1_moldova_console
+❯ cd ..  # Înapoi la root
+cd: too many arguments
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav/v1_moldova_console
+❯ cd ..
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ pwd
+/Users/matei/Personal/Projects/C++/MapNav/RomaniaNav
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/matei/Personal/Projects/C++/MapNav/RomaniaNav/.git/
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ ls -la | grep .git
+drwxr-xr-x@  9 matei  staff   288 Feb 14 18:25 .git
+-rw-r--r--@  1 matei  staff   252 Feb 14 18:23 .gitignore
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git add .
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git status
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   README.md
+	new file:   v1_moldova_console/README.md
+	new file:   v1_moldova_console/src/main.cpp
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git commit -m "Structura proiect + Version 1.0 (Moldova doar consolă)"
+
+[master (root-commit) b2e2f3d] Structura proiect + Version 1.0 (Moldova doar consolă)
+ Committer: Matei <matei@Mateis-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 1402 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 v1_moldova_console/README.md
+ create mode 100644 v1_moldova_console/src/main.cpp
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git log --online
+fatal: unrecognized argument: --online
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git log --oneline
+b2e2f3d (HEAD -> master) Structura proiect + Version 1.0 (Moldova doar consolă)
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote add origin https://github.com/USERNAME/RomaniaNavigator.git
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote add origin https://github.com/mateivul/RomaniaNav.git
+
+error: remote origin already exists.
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote remove
+usage: git remote remove <name>
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote remove origin https://github.com/USERNAME/RomaniaNavigator.git
+
+usage: git remote remove <name>
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote remove https://github.com/USERNAME/RomaniaNavigator.git
+
+error: No such remote: 'https://github.com/USERNAME/RomaniaNavigator.git'
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote add origin https://github.com/mateivul/RomaniaNav.git
+
+error: remote origin already exists.
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote -v
+
+origin	https://github.com/USERNAME/RomaniaNavigator.git (fetch)
+origin	https://github.com/USERNAME/RomaniaNavigator.git (push)
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote set-url origin https://github.com/mateivul/RomaniaNav.git
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git remote -v
+
+origin	https://github.com/mateivul/RomaniaNav.git (fetch)
+origin	https://github.com/mateivul/RomaniaNav.git (push)
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git branch -M main
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git push -u origin main
+
+Username for 'https://github.com': mateivul
+Password for 'https://mateivul@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/mateivul/RomaniaNav.git/'
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git push -u origin main
+
+Username for 'https://github.com': mateivul
+Password for 'https://mateivul@github.com':
+remote: Permission to mateivul/RomaniaNav.git denied to mateivul.
+fatal: unable to access 'https://github.com/mateivul/RomaniaNav.git/': The requested URL returned error: 403
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git push -u origin main
+
+Username for 'https://github.com': mateivul
+Password for 'https://mateivul@github.com':
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 11.51 KiB | 11.51 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mateivul/RomaniaNav.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ touch v2_moldova_html/.gitkeep
+touch v2_moldova_html/src/.gitkeep
+touch v3_romania_console/.gitkeep
+touch v3_romania_console/src/.gitkeep
+touch v4_romania_html_complete/.gitkeep
+touch v4_romania_html_complete/src/.gitkeep
+touch docs/screenshots/.gitkeep
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ ls -la v2_moldova_html/
+
+total 0
+drwxr-xr-x@  4 matei  staff  128 Feb 14 18:42 .
+drwxr-xr-x  10 matei  staff  320 Feb 14 18:43 ..
+-rw-r--r--@  1 matei  staff    0 Feb 14 18:42 .gitkeep
+drwxr-xr-x@  3 matei  staff   96 Feb 14 18:42 src
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+	v2_moldova_html/
+	v3_romania_console/
+	v4_romania_html/
+
+nothing added to commit but untracked files present (use "git add" to track)
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git add docs/
+git add v2_moldova_html/
+git add v3_romania_console/
+git add v4_romania_html/
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git add .
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   docs/screenshots/.gitkeep
+	new file:   v2_moldova_html/.gitkeep
+	new file:   v2_moldova_html/src/.gitkeep
+	new file:   v3_romania_console/.gitkeep
+	new file:   v3_romania_console/src/.gitkeep
+	new file:   v4_romania_html/.gitkeep
+	new file:   v4_romania_html/src/.gitkeep
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git commit -m "Structura foldere completa""
+
+dquote>
+dquote>
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git commit -m "Structura foldere completa"
+[main f3c7990] Structura foldere completa
+ Committer: Matei <matei@Mateis-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 docs/screenshots/.gitkeep
+ create mode 100644 v2_moldova_html/.gitkeep
+ create mode 100644 v2_moldova_html/src/.gitkeep
+ create mode 100644 v3_romania_console/.gitkeep
+ create mode 100644 v3_romania_console/src/.gitkeep
+ create mode 100644 v4_romania_html/.gitkeep
+ create mode 100644 v4_romania_html/src/.gitkeep
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git push
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 588 bytes | 588.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mateivul/RomaniaNav.git
+   b2e2f3d..f3c7990  main -> main
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ # Adaugă tot folderul v2_moldova_html
+git add v2_moldova_html/
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git add v2_moldova_html/
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   v2_moldova_html/src/main.cpp
+	new file:   v2_moldova_html/src/output/moldova_routes.html
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ echo "*.html" > v2_moldova_html/output/.gitignore
+
+zsh: no such file or directory: v2_moldova_html/output/.gitignore
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ echo "*.html" > v2_moldova_html/output/.gitignore
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git add v2_moldova_html/output/.gitignore
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   v2_moldova_html/output/.gitignore
+	new file:   v2_moldova_html/src/main.cpp
+	new file:   v2_moldova_html/src/output/moldova_routes.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    v2_moldova_html/src/output/moldova_routes.html
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ [200~git commit -m "✅ Faza 2 completă - Moldova cu hartă HTML interactivă
+dquote> git status
+
+matei ~/Personal/Projects/C++/MapNav/RomaniaNav
+❯ git commit -m "Version 2.0 (Moldova html)"
+[main db68c8d] Version 2.0 (Moldova html)
+ Committer: Matei <matei@Mateis-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+  UW PICO 5.09                           New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               [ Read 28 lines ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell
+  UW PICO 5.09                        File: .gitignore
+
 # Executabile compilate
+*.exe
+*.out
+moldova_navigator
+romania_navigator
+a.out
+
+# Build directories
+build/
+bin/
+obj/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell# Executabile compilate
 *.exe
 *.out
 moldova_navigator
