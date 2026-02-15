@@ -48,3 +48,6 @@ temp/
 # System files
 Thumbs.db
 desktop.ini
+
+
+**/node_modules
