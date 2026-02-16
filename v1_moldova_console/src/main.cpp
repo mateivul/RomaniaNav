@@ -183,9 +183,9 @@ void initializeazaDate() {
     // ───────────────────────────────────────────────────
     adaugaDrum(0, 9,  30,  "DN2",   90);   // Suceava - Fălticeni
     adaugaDrum(0, 10, 42,  "DN29",  90);   // Suceava - Rădăuți
-    adaugaDrum(0, 5,  70,  "E85",   100);  // Suceava - Roman
+    // adaugaDrum(0, 5,  70,  "E85",   100);  // Suceava - Roman
     adaugaDrum(0, 8,  110, "DN17",  80);   // Suceava - Vatra Dornei
-    adaugaDrum(0, 4,  85,  "DN15",  80);   // Suceava - Piatra Neamț
+    // adaugaDrum(0, 4,  85,  "DN15",  80);   // Suceava - Piatra Neamț
     adaugaDrum(1, 10, 55,  "DN29A", 80);   // Botoșani - Rădăuți
     adaugaDrum(1, 9,  65,  "DN29B", 80);   // Botoșani - Fălticeni
     adaugaDrum(1, 2,  110, "E583",  100);  // Botoșani - Iași
@@ -195,7 +195,7 @@ void initializeazaDate() {
     adaugaDrum(2, 3,  120, "E85",   100);  // Iași - Bacău
     adaugaDrum(3, 5,  35,  "E85",   100);  // Bacău - Roman
     adaugaDrum(3, 4,  60,  "DN15",  80);   // Bacău - Piatra Neamț
-    adaugaDrum(3, 6,  90,  "DN2",   90);   // Bacău - Vaslui
+    // adaugaDrum(3, 6,  90,  "DN2",   90);   // Bacău - Vaslui
     adaugaDrum(3, 7,  120, "E85",   100);  // Bacău - Galați
     adaugaDrum(4, 5,  18,  "DN15",  80);   // Piatra Neamț - Roman
     adaugaDrum(4, 8,  80,  "DN15",  80);   // Piatra Neamț - Vatra Dornei
