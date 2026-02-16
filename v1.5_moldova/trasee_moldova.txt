@@ -1,0 +1,653 @@
+╔══════════════════════════════════════════════════╗
+║         MOLDOVA NAVIGATOR - Trasee Salvate       ║
+╚══════════════════════════════════════════════════╝
+
+Data: Sun Feb 15 16:30:18 2026
+De la: Suceava
+Până la: Fălticeni
+Trasee găsite: 53
+──────────────────────────────────────────────────
+
+1. Suceava -> Fălticeni
+   Distanta: 30 km
+   Timp: 20min
+   Segmente:
+     - Suceava -> Fălticeni (30 km, DN2, 90 km/h)
+
+2. Suceava -> Rădăuți -> Fălticeni
+   Distanta: 77 km
+   Timp: 58min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+3. Suceava -> Rădăuți -> Botoșani -> Fălticeni
+   Distanta: 162 km
+   Timp: 1h 58min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+4. Suceava -> Vatra Dornei -> Rădăuți -> Fălticeni
+   Distanta: 215 km
+   Timp: 2h 45min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+5. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 238 km
+   Timp: 2h 53min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+6. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 290 km
+   Timp: 3h 29min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+7. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Fălticeni
+   Distanta: 300 km
+   Timp: 3h 45min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+8. Suceava -> Rădăuți -> Botoșani -> Iași -> Roman -> Fălticeni
+   Distanta: 312 km
+   Timp: 3h 25min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+9. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Roman -> Fălticeni
+   Distanta: 315 km
+   Timp: 3h 46min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+10. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Roman -> Fălticeni
+   Distanta: 367 km
+   Timp: 4h 21min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+11. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Iași -> Botoșani -> Fălticeni
+   Distanta: 408 km
+   Timp: 4h 45min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+12. Suceava -> Rădăuți -> Botoșani -> Iași -> Bacău -> Roman -> Fălticeni
+   Distanta: 417 km
+   Timp: 4h 24min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+13. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 433 km
+   Timp: 5h 7min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+14. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Iași -> Roman -> Fălticeni
+   Distanta: 450 km
+   Timp: 5h 10min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+15. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Roman -> Fălticeni
+   Distanta: 450 km
+   Timp: 5h 12min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+16. Suceava -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Bacău -> Roman -> Fălticeni
+   Distanta: 457 km
+   Timp: 4h 54min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Bacău (90 km, DN2D, 90 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+17. Suceava -> Rădăuți -> Botoșani -> Iași -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 460 km
+   Timp: 5h 2min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+18. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Roman -> Iași -> Botoșani -> Fălticeni
+   Distanta: 460 km
+   Timp: 5h 20min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+19. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Roman -> Iași -> Botoșani -> Fălticeni
+   Distanta: 485 km
+   Timp: 5h 37min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+20. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Vaslui -> Iași -> Roman -> Fălticeni
+   Distanta: 490 km
+   Timp: 5h 40min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+21. Suceava -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 500 km
+   Timp: 5h 32min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Bacău (90 km, DN2D, 90 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+22. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Iași -> Roman -> Fălticeni
+   Distanta: 502 km
+   Timp: 5h 46min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+23. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Roman -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 510 km
+   Timp: 6h 0min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+24. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Iași -> Botoșani -> Fălticeni
+   Distanta: 513 km
+   Timp: 5h 45min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+25. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Iași -> Botoșani -> Fălticeni
+   Distanta: 520 km
+   Timp: 5h 55min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+26. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Roman -> Iași -> Botoșani -> Fălticeni
+   Distanta: 537 km
+   Timp: 6h 13min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Iași (50 km, DN28, 90 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+27. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 538 km
+   Timp: 6h 7min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+28. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Vaslui -> Iași -> Roman -> Fălticeni
+   Distanta: 542 km
+   Timp: 6h 16min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+29. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 545 km
+   Timp: 6h 18min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+30. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 553 km
+   Timp: 6h 15min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+31. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Bacău -> Roman -> Fălticeni
+   Distanta: 555 km
+   Timp: 6h 11min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+32. Suceava -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Galați -> Bacău -> Roman -> Fălticeni
+   Distanta: 559 km
+   Timp: 5h 54min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Galați (72 km, DN24, 90 km/h)
+     - Galați -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+33. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 560 km
+   Timp: 6h 25min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+34. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Iași -> Botoșani -> Fălticeni
+   Distanta: 565 km
+   Timp: 6h 20min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+35. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Iași -> Botoșani -> Fălticeni
+   Distanta: 572 km
+   Timp: 6h 31min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Iași (120 km, E85, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+36. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Vaslui -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 578 km
+   Timp: 6h 37min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+37. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Vaslui -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 585 km
+   Timp: 6h 48min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+38. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Galați -> Vaslui -> Iași -> Roman -> Fălticeni
+   Distanta: 592 km
+   Timp: 6h 40min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+39. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Bacău -> Roman -> Fălticeni
+   Distanta: 595 km
+   Timp: 6h 41min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Bacău (90 km, DN2D, 90 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+40. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 598 km
+   Timp: 6h 49min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+41. Suceava -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Galați -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 602 km
+   Timp: 6h 32min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Galați (72 km, DN24, 90 km/h)
+     - Galați -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+42. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 605 km
+   Timp: 6h 50min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+43. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 612 km
+   Timp: 7h 1min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Vaslui (90 km, DN2D, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+44. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 638 km
+   Timp: 7h 19min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Bacău (90 km, DN2D, 90 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+45. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Galați -> Vaslui -> Iași -> Roman -> Fălticeni
+   Distanta: 644 km
+   Timp: 7h 16min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Roman (50 km, DN28, 90 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+46. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 655 km
+   Timp: 7h 15min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+47. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 662 km
+   Timp: 7h 25min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+48. Suceava -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 680 km
+   Timp: 7h 37min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+49. Suceava -> Vatra Dornei -> Piatra Neamț -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Rădăuți -> Fălticeni
+   Distanta: 687 km
+   Timp: 7h 48min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Rădăuți (55 km, DN29A, 80 km/h)
+     - Rădăuți -> Fălticeni (35 km, DJ209, 70 km/h)
+
+50. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Galați -> Bacău -> Roman -> Fălticeni
+   Distanta: 697 km
+   Timp: 7h 41min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Galați (72 km, DN24, 90 km/h)
+     - Galați -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Roman (35 km, E85, 100 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+51. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Roman -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 707 km
+   Timp: 7h 50min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Bacău (35 km, E85, 100 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+52. Suceava -> Rădăuți -> Vatra Dornei -> Piatra Neamț -> Bacău -> Galați -> Vaslui -> Iași -> Botoșani -> Fălticeni
+   Distanta: 714 km
+   Timp: 8h 1min
+   Segmente:
+     - Suceava -> Rădăuți (42 km, DN29, 90 km/h)
+     - Rădăuți -> Vatra Dornei (95 km, DN17, 80 km/h)
+     - Vatra Dornei -> Piatra Neamț (80 km, DN15, 80 km/h)
+     - Piatra Neamț -> Bacău (60 km, DN15, 80 km/h)
+     - Bacău -> Galați (120 km, E85, 100 km/h)
+     - Galați -> Vaslui (72 km, DN24, 90 km/h)
+     - Vaslui -> Iași (70 km, E581, 100 km/h)
+     - Iași -> Botoșani (110 km, E583, 100 km/h)
+     - Botoșani -> Fălticeni (65 km, DN29B, 80 km/h)
+
+53. Suceava -> Vatra Dornei -> Rădăuți -> Botoșani -> Iași -> Vaslui -> Galați -> Bacău -> Piatra Neamț -> Roman -> Fălticeni
+   Distanta: 740 km
+   Timp: 8h 19min
+   Segmente:
+     - Suceava -> Vatra Dornei (85 km, DN17, 80 km/h)
+     - Vatra Dornei -> Rădăuți (95 km, DN17, 80 km/h)
+     - Rădăuți -> Botoșani (55 km, DN29A, 80 km/h)
+     - Botoșani -> Iași (110 km, E583, 100 km/h)
+     - Iași -> Vaslui (70 km, E581, 100 km/h)
+     - Vaslui -> Galați (72 km, DN24, 90 km/h)
+     - Galați -> Bacău (120 km, E85, 100 km/h)
+     - Bacău -> Piatra Neamț (60 km, DN15, 80 km/h)
+     - Piatra Neamț -> Roman (18 km, DN15, 80 km/h)
+     - Roman -> Fălticeni (55 km, DN2, 90 km/h)
+
+══════════════════════════════════════════════════
+     Generat de Moldova Navigator v1.5
+══════════════════════════════════════════════════
