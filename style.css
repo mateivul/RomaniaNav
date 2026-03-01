@@ -544,6 +544,11 @@ body {
     color: #aaa;
 }
 
+.speed-max {
+    font-size: 0.9em;
+    color: #666;
+}
+
 /* Error */
 .error-msg {
     background: #4a1025;

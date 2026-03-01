@@ -720,12 +720,12 @@ function showOption3(data) {
 
     // Speed legend
     html += '<div class="result-card">';
-    html += '<div class="result-title">🚗 Viteze maxime legale</div>';
+    html += '<div class="result-title">🚗 Viteze (medie estimată / max. legală)</div>';
     html += '<div class="speed-info">';
-    html += '<span class="speed-item"><span class="road-tag road-A">A</span> 130 km/h</span>';
-    html += '<span class="speed-item"><span class="road-tag road-E">E</span> 100 km/h</span>';
-    html += '<span class="speed-item"><span class="road-tag road-DN">DN</span> 90 km/h</span>';
-    html += '<span class="speed-item"><span class="road-tag road-DJ">DJ</span> 70 km/h</span>';
+    html += '<span class="speed-item"><span class="road-tag road-A">A</span> 110 km/h <span class="speed-max">(max 130)</span></span>';
+    html += '<span class="speed-item"><span class="road-tag road-E">E</span> 85 km/h <span class="speed-max">(max 100)</span></span>';
+    html += '<span class="speed-item"><span class="road-tag road-DN">DN</span> 70 km/h <span class="speed-max">(max 90)</span></span>';
+    html += '<span class="speed-item"><span class="road-tag road-DJ">DJ</span> 55 km/h <span class="speed-max">(max 70)</span></span>';
     html += '</div>';
     html += '</div>';
 
@@ -734,7 +734,7 @@ function showOption3(data) {
 
 // ===== OPTION 4: TRAVEL TIME =====
 const transportSpeeds = {
-    car:     { A: 130, E: 100, DN: 90, DJ: 70 },
+    car:     { A: 110, E: 85,  DN: 70, DJ: 55 },
     bicycle: { A: 18,  E: 18,  DN: 18, DJ: 18 },
     walking: { A: 5,   E: 5,   DN: 5,  DJ: 5  }
 };
@@ -848,12 +848,12 @@ function renderOption4() {
     // Speed info for current mode
     html += '<div class="result-card">';
     if (mode === 'car') {
-        html += '<div class="result-title">🚗 Viteze maxime legale</div>';
+        html += '<div class="result-title">🚗 Viteze (medie estimată / max. legală)</div>';
         html += '<div class="speed-info">';
-        html += '<span class="speed-item"><span class="road-tag road-A">A</span> 130 km/h</span>';
-        html += '<span class="speed-item"><span class="road-tag road-E">E</span> 100 km/h</span>';
-        html += '<span class="speed-item"><span class="road-tag road-DN">DN</span> 90 km/h</span>';
-        html += '<span class="speed-item"><span class="road-tag road-DJ">DJ</span> 70 km/h</span>';
+        html += '<span class="speed-item"><span class="road-tag road-A">A</span> 110 km/h <span class="speed-max">(max 130)</span></span>';
+        html += '<span class="speed-item"><span class="road-tag road-E">E</span> 85 km/h <span class="speed-max">(max 100)</span></span>';
+        html += '<span class="speed-item"><span class="road-tag road-DN">DN</span> 70 km/h <span class="speed-max">(max 90)</span></span>';
+        html += '<span class="speed-item"><span class="road-tag road-DJ">DJ</span> 55 km/h <span class="speed-max">(max 70)</span></span>';
     } else if (mode === 'bicycle') {
         html += '<div class="result-title">🚲 Viteză medie estimată</div>';
         html += '<div class="speed-info">';

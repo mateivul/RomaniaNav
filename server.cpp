@@ -122,11 +122,11 @@ Road* findRoad(int from, int to)
 
 int getSpeed(const string& roadType)
 {
-    if (roadType == "A")  return 130;
-    if (roadType == "E")  return 100;
-    if (roadType == "DN") return 90;
-    if (roadType == "DJ") return 70;
-    return 90;
+    if (roadType == "A")  return 110;
+    if (roadType == "E")  return 85;
+    if (roadType == "DN") return 70;
+    if (roadType == "DJ") return 55;
+    return 70;
 }
 
 // ===== BACKTRACKING =====
