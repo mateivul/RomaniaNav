@@ -424,9 +424,9 @@ void handleClient(SOCKET clientSocket) {
     else {
         // Whitelist static files only — prevents path traversal
         string filePath;
-        if (path == "/" || path == "/index.html") filePath = "index.html";
-        else if (path == "/style.css")            filePath = "style.css";
-        else if (path == "/script.js")            filePath = "script.js";
+        if (path == "/" || path == "/index.html") filePath = "frontend/index.html";
+        else if (path == "/style.css")            filePath = "frontend/style.css";
+        else if (path == "/script.js")            filePath = "frontend/script.js";
         else {
             response = "HTTP/1.1 404 Not Found\r\nContent-Length: 9\r\n\r\nNot Found";
             send(clientSocket, response.c_str(), response.size(), 0);
@@ -456,7 +456,7 @@ void handleClient(SOCKET clientSocket) {
 }
 
 int main() {
-    loadData("data.txt");
+    loadData("data/data.txt");
 
 #ifdef _WIN32
     WSADATA wsaData;
