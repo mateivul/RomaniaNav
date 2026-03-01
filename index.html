@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Moldova</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1> Maps Moldova</h1>
+            <p class="subtitle">Navigator</p>
+        </div>
+
+        <div class="controls">
+            <div class="input-group">
+                <label> Start</label>
+                <div class="select-wrapper">
+                    <select id="startCity"></select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label> Destinație</label>
+                <div class="select-wrapper">
+                    <select id="endCity"></select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label> Opțiune</label>
+                <div class="select-wrapper">
+                    <select id="optionSelect">
+                        <option value="1">1. Distanța minimă</option>
+                        <option value="2">2. Toate traseele</option>
+                        <option value="3">3. Tipuri de drum</option>
+                        <option value="4">4. Timp de parcurgere</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="searchBtn" class="search-btn">Execută cerere</button>
+            <button id="resetBtn" class="reset-btn">Resetează</button>
+
+            <div class="click-hint" id="clickHint">
+                Click pe pin pentru selecție rapidă
+            </div>
+        </div>
+
+        <div class="results-container" id="results">
+            <div class="placeholder">
+                <div class="placeholder-icon"></div>
+                <p>Selectează două orașe și apasă <strong>Execută cerere</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="resizeHandle" class="resize-handle"><span class="resize-dots"></span></div>
+
+    <div id="map"></div>
+
+    <div class="legend" id="legend">
+        <div class="legend-title">Legenda drumuri</div>
+        <div class="legend-item"><span class="legend-color" style="background:#e74c3c"></span> Autostradă (A)</div>
+        <div class="legend-item"><span class="legend-color" style="background:#2ecc71"></span> European (E)</div>
+        <div class="legend-item"><span class="legend-color" style="background:#3498db"></span> Național (DN)</div>
+        <div class="legend-item"><span class="legend-color" style="background:#f39c12"></span> Județean (DJ)</div>
+    </div>
+
+    <button id="themeToggle" class="theme-toggle-btn" title="Comută tema">☀️</button>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

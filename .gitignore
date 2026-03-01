@@ -4,28 +4,7 @@
 moldova_navigator
 romania_navigator
 a.out
-
-# Build directories
-build/
-bin/
-obj/
-
-# IDE/Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-
-^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
-^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell# Executabile compilate
-*.exe
-*.out
-moldova_navigator
-romania_navigator
-a.out
+server
 
 # Build directories
 build/
@@ -49,5 +28,5 @@ temp/
 Thumbs.db
 desktop.ini
 
-
-**/node_modules
+# Work in progress
+beta/
