@@ -1,6 +1,5 @@
 :root {
     --accent: #e94560;
-    --accent-rgb: 233, 69, 96;
 }
 
 * {
@@ -18,7 +17,6 @@ body {
     color: #eee;
 }
 
-/* ===== SIDEBAR ===== */
 .sidebar {
     width: 380px;
     min-width: 380px;
@@ -47,7 +45,6 @@ body {
     color: #888;
 }
 
-/* ===== CONTROLS ===== */
 .controls {
     padding: 14px 16px;
     border-bottom: 1px solid #1f2937;
@@ -73,7 +70,7 @@ body {
 
 .input-group.click-active .select-wrapper select {
     border-color: var(--accent);
-    box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.2);
+    box-shadow: 0 0 0 2px rgba(180, 60, 80, 0.15);
 }
 
 .select-wrapper select {
@@ -97,12 +94,11 @@ body {
     border-color: #4b5563;
 }
 
-/* Search / Reset buttons */
 .search-btn {
     width: 100%;
     padding: 10px;
     background: linear-gradient(135deg, var(--accent), #c0392b);
-    border: 1px solid rgba(var(--accent-rgb), 0.6);
+    border: 1px solid rgba(180, 60, 80, 0.5);
     color: white;
     border-radius: 8px;
     font-size: 0.9em;
@@ -111,12 +107,12 @@ body {
     cursor: pointer;
     transition: transform 0.15s, box-shadow 0.2s;
     margin-bottom: 6px;
-    box-shadow: 0 2px 10px rgba(var(--accent-rgb), 0.3);
+    box-shadow: 0 2px 10px rgba(180, 60, 80, 0.25);
 }
 
 .search-btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 5px 18px rgba(var(--accent-rgb), 0.55);
+    box-shadow: 0 5px 18px rgba(180, 60, 80, 0.4);
 }
 
 .search-btn:active {
@@ -132,19 +128,17 @@ body {
 
 .reset-btn {
     width: 100%;
-    padding: 7px;
+    padding: 5px;
     background: transparent;
-    border: 1px solid #374151;
-    color: #9ca3af;
-    border-radius: 6px;
-    font-size: 0.8em;
+    border: none;
+    color: #6b7280;
+    font-size: 0.75em;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: color 0.2s;
 }
 
 .reset-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    color: #9ca3af;
 }
 
 .click-hint {
@@ -158,7 +152,6 @@ body {
     text-align: center;
 }
 
-/* ===== RESULTS ===== */
 .results-container {
     flex: 1;
     overflow-y: auto;
@@ -210,18 +203,19 @@ body {
     line-height: 1.5;
 }
 
-/* Result cards */
 .result-card {
     background: #1a1f35;
     border: 1px solid #2a3050;
-    border-radius: 8px;
+    border-left: 2px solid #2d3555;
+    border-radius: 6px;
     padding: 12px;
     margin-bottom: 10px;
     transition: border-color 0.2s;
 }
 
 .result-card:hover {
-    border-color: #4b5563;
+    border-color: #3a4060;
+    border-left-color: #3d4a6a;
 }
 
 .result-title {
@@ -233,7 +227,6 @@ body {
     border-bottom: 1px solid #2a3050;
 }
 
-/* Big stat */
 .big-stat {
     text-align: center;
     padding: 10px 0;
@@ -242,7 +235,7 @@ body {
 .big-stat .value {
     font-size: 2.2em;
     font-weight: bold;
-    color: #4ecca3;
+    color: #7ec8a4;
 }
 
 .big-stat .unit {
@@ -257,7 +250,6 @@ body {
     margin-top: 2px;
 }
 
-/* Path display */
 .path-display {
     display: flex;
     flex-wrap: wrap;
@@ -271,7 +263,7 @@ body {
     background: #0f3460;
     padding: 2px 7px;
     border-radius: 4px;
-    color: #4ecca3;
+    color: #7ec8a4;
     font-weight: 500;
 }
 
@@ -280,7 +272,6 @@ body {
     font-size: 0.75em;
 }
 
-/* Segment table */
 .seg-table {
     width: 100%;
     border-collapse: collapse;
@@ -305,10 +296,9 @@ body {
 }
 
 .seg-table tr:hover td {
-    background: rgba(var(--accent-rgb), 0.05);
+    background: rgba(180, 60, 80, 0.05);
 }
 
-/* Road tags */
 .road-tag {
     display: inline-block;
     padding: 1px 6px;
@@ -319,11 +309,10 @@ body {
 }
 
 .road-A { background: #e74c3c; }
-.road-E { background: #27ae60; }
+.road-E { background: #4a9e72; }
 .road-DN { background: #2980b9; }
-.road-DJ { background: #e67e22; }
+.road-DJ { background: #c47a35; }
 
-/* Road summary bars */
 .road-summary {
     margin-top: 8px;
 }
@@ -356,9 +345,9 @@ body {
 }
 
 .road-bar-fill.road-A { background: #e74c3c; }
-.road-bar-fill.road-E { background: #27ae60; }
+.road-bar-fill.road-E { background: #4a9e72; }
 .road-bar-fill.road-DN { background: #2980b9; }
-.road-bar-fill.road-DJ { background: #e67e22; }
+.road-bar-fill.road-DJ { background: #c47a35; }
 
 .road-bar-value {
     min-width: 90px;
@@ -367,7 +356,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Time display */
 .time-display {
     text-align: center;
     padding: 12px 0;
@@ -376,7 +364,7 @@ body {
 .time-big {
     font-size: 2em;
     font-weight: bold;
-    color: #4ecca3;
+    color: #7ec8a4;
 }
 
 .time-unit {
@@ -385,7 +373,6 @@ body {
     margin: 0 2px;
 }
 
-/* ===== ALL PATHS (option 2) ===== */
 .paths-controls {
     display: flex;
     gap: 6px;
@@ -404,14 +391,21 @@ body {
     transition: all 0.2s;
 }
 
-.sort-btn:hover, .sort-btn.active {
-    border-color: var(--accent);
+.sort-btn:hover {
+    color: #d1d5db;
+    border-color: #4b5563;
+}
+
+.sort-btn.active {
     color: var(--accent);
+    border-color: transparent;
+    border-bottom: 1px solid var(--accent);
+    background: transparent;
 }
 
 .path-card {
     background: #1a1f35;
-    border: 1px solid #2a3050;
+    border: 1px solid #252b45;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 8px;
@@ -426,7 +420,7 @@ body {
 
 .path-card.selected {
     border-color: var(--accent);
-    box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.2);
+    box-shadow: 0 0 10px rgba(180, 60, 80, 0.15);
 }
 
 .path-card.compare-a {
@@ -435,7 +429,7 @@ body {
 }
 
 .path-card.compare-b {
-    border-color: #e67e22;
+    border-color: #c47a35;
     box-shadow: 0 0 8px rgba(230, 126, 34, 0.3);
 }
 
@@ -460,7 +454,7 @@ body {
 }
 
 .path-stat-val {
-    color: #4ecca3;
+    color: #7ec8a4;
     font-weight: 600;
 }
 
@@ -500,7 +494,7 @@ body {
 }
 
 .compare-val.better {
-    color: #4ecca3;
+    color: #7ec8a4;
     font-weight: bold;
 }
 
@@ -528,7 +522,6 @@ body {
     border-radius: 4px;
 }
 
-/* Speed info */
 .speed-info {
     display: flex;
     flex-wrap: wrap;
@@ -549,7 +542,6 @@ body {
     color: #666;
 }
 
-/* Error */
 .error-msg {
     background: #4a1025;
     border: 1px solid var(--accent);
@@ -560,7 +552,6 @@ body {
     text-align: center;
 }
 
-/* Loading */
 .loading {
     text-align: center;
     padding: 20px;
@@ -582,13 +573,11 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* ===== MAP ===== */
 #map {
     flex: 1;
     height: 100vh;
 }
 
-/* Legend */
 .legend {
     position: fixed;
     bottom: 20px;
@@ -623,7 +612,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Leaflet popup */
 .leaflet-popup-content-wrapper {
     background: #16213e;
     color: #eee;
@@ -639,9 +627,6 @@ body {
     font-size: 0.85em;
 }
 
-/* ===== OPTION 2 ENHANCEMENTS ===== */
-
-/* Road type badges on path cards */
 .path-road-types {
     display: flex;
     flex-wrap: wrap;
@@ -654,13 +639,12 @@ body {
     padding: 1px 5px;
 }
 
-/* Compare button on each card */
 .cmp-btn {
     padding: 3px 8px;
     background: transparent;
     border: 1px solid #374151;
     color: #6b7280;
-    border-radius: 4px;
+    border-radius: 3px;
     font-size: 0.72em;
     cursor: pointer;
     transition: all 0.2s;
@@ -679,7 +663,6 @@ body {
     background: rgba(52, 152, 219, 0.12);
 }
 
-/* Compare panel header */
 .compare-title-row {
     display: flex;
     justify-content: space-between;
@@ -707,7 +690,6 @@ body {
     color: var(--accent);
 }
 
-/* Compare grid road type cells */
 .compare-road-cell {
     display: flex;
     flex-wrap: wrap;
@@ -716,13 +698,11 @@ body {
     align-items: center;
 }
 
-/* Column headers in compare grid */
 .compare-col-header {
     font-weight: 600;
     font-size: 0.82em;
 }
 
-/* Paths section in compare panel */
 .compare-paths {
     margin-top: 8px;
     font-size: 0.7em;
@@ -737,11 +717,10 @@ body {
 }
 
 .compare-path-b {
-    color: #e67e22;
+    color: #c47a35;
     word-break: break-word;
 }
 
-/* ===== THEME TOGGLE BUTTON ===== */
 .theme-toggle-btn {
     position: fixed;
     top: 12px;
@@ -766,7 +745,6 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 
-/* ===== LIGHT MODE ===== */
 body.light-mode {
     background: #f0f4f8;
     color: #1a202c;
@@ -796,12 +774,11 @@ body.light-mode .select-wrapper select {
 }
 
 body.light-mode .search-btn {
-    box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.25);
+    box-shadow: 0 4px 15px rgba(180, 60, 80, 0.2);
 }
 
 body.light-mode .reset-btn {
-    border-color: #cbd5e0;
-    color: #718096;
+    color: #a0aec0;
 }
 
 body.light-mode .click-hint {
@@ -821,10 +798,12 @@ body.light-mode .results-container:hover::-webkit-scrollbar-thumb {
 body.light-mode .result-card {
     background: #f8fafc;
     border-color: #e2e8f0;
+    border-left-color: #d0dae8;
 }
 
 body.light-mode .result-card:hover {
     border-color: #cbd5e0;
+    border-left-color: #b8c8d8;
 }
 
 body.light-mode .result-title {
@@ -861,7 +840,7 @@ body.light-mode .seg-table td {
 }
 
 body.light-mode .seg-table tr:hover td {
-    background: rgba(var(--accent-rgb), 0.04);
+    background: rgba(180, 60, 80, 0.04);
 }
 
 body.light-mode .path-card {
@@ -878,7 +857,7 @@ body.light-mode .path-stats {
 }
 
 body.light-mode .sort-btn {
-    background: #edf2f7;
+    background: transparent;
     border-color: #cbd5e0;
     color: #4a5568;
 }
@@ -978,7 +957,6 @@ body.light-mode .paths-more-hint {
     border-color: #cbd5e0;
 }
 
-/* ===== RESIZE HANDLE ===== */
 .resize-handle {
     width: 6px;
     height: 100vh;
@@ -1037,7 +1015,6 @@ body.light-mode .resize-dots::after {
     background: #a0aec0;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .sidebar {
         width: 320px;

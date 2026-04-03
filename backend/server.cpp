@@ -25,13 +25,11 @@ typedef int socklen_t;
 
 using namespace std;
 
-// ===== CONSTANTS =====
 const int MAX_CITIES = 50;
 const int MAX_ADJ    = 15;
 const int MAX_PATHS  = 5000;
 const int MAX_X      = MAX_CITIES + 1; // x is 1-indexed
 
-// ===== DATA STRUCTURES =====
 struct Road {
     int to;
     int distance;
@@ -67,7 +65,6 @@ int  bktDest;    // destinatia cautata
 int  cacheStart = -1;
 int  cacheEnd   = -1;
 
-// ===== LOAD DATA =====
 void loadData(const string& filename) {
     ifstream fin(filename);
     if (!fin.is_open()) {
@@ -112,7 +109,6 @@ int findCity(const string& name) {
     return -1;
 }
 
-// ===== ROAD INFO =====
 Road* findRoad(int from, int to)
 {
     for (int i = 0; i < adjCount[from]; i++)
@@ -129,7 +125,6 @@ int getSpeed(const string& roadType)
     return 70;
 }
 
-// ===== BACKTRACKING =====
 void INIT(int k)
 {
     x[k] = -1;
@@ -213,7 +208,6 @@ void findAllPaths(int start, int dest)
     BKT();
 }
 
-// ===== JSON BUILDERS =====
 string escapeJSON(const string& s) {
     string result;
     for (char c : s) {
@@ -315,7 +309,6 @@ string handleAPI(const string& startName, const string& endName, int option) {
     return result;
 }
 
-// ===== HTTP SERVER =====
 string readFile(const string& path) {
     ifstream file(path, ios::binary);
     if (!file.is_open()) return "";

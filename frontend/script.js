@@ -1,4 +1,3 @@
-// ===== GLOBAL STATE =====
 let map;
 let citiesData = [];
 let edgesData = [];
@@ -22,12 +21,11 @@ const ACCENT_COLOR = '#e94560';
 
 const roadColors = {
     'A': '#e74c3c',
-    'E': '#2ecc71',
+    'E': '#4a9e72',
     'DN': '#3498db',
     'DJ': '#f39c12'
 };
 
-// ===== INIT =====
 document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('results').innerHTML =
         '<div class="loading"><div class="loading-spinner"></div><br>Se încarcă harta...</div>';
@@ -73,7 +71,6 @@ async function loadCities() {
 }
 
 function drawCitiesAndEdges() {
-    // Draw edges
     edgesData.forEach(edge => {
         let c1 = citiesData[edge.from];
         let c2 = citiesData[edge.to];
@@ -92,7 +89,6 @@ function drawCitiesAndEdges() {
         edgeLines.push(line);
     });
 
-    // Draw city markers
     citiesData.forEach((city) => {
         let marker = L.circleMarker([city.lat, city.lon], {
             radius: 7,
@@ -108,45 +104,44 @@ function drawCitiesAndEdges() {
             offset: [0, -10]
         });
 
-        // Click to select
         marker.on('click', function () {
-            selectCityFromMap(city.name);
+            onCityClick(city.name);
         });
 
         cityMarkers.push(marker);
     });
 }
 
-function selectCityFromMap(name) {
+function onCityClick(name) {
     let startSel = document.getElementById('startCity');
     let endSel = document.getElementById('endCity');
 
     if (clickSelectMode === 'start') {
         startSel.value = name;
         clickSelectMode = 'end';
-        showClickHint('Acum click pentru DESTINAȚIE sau selectează manual');
+        updateHint('Acum click pentru DESTINAȚIE sau selectează manual');
     } else {
         endSel.value = name;
         clickSelectMode = 'start';
-        showClickHint('Click pe pin: selectează START');
+        updateHint('Click pe pin: selectează START');
     }
-    updateMarkerHighlights();
+    highlightCities();
     validateCities();
-    updateClickModeIndicator();
+    updateMode();
 }
 
-function showClickHint(text) {
+function updateHint(text) {
     document.getElementById('clickHint').textContent = '💡 ' + text;
 }
 
-function updateMarkerHighlights() {
+function highlightCities() {
     let startName = document.getElementById('startCity').value;
     let endName = document.getElementById('endCity').value;
 
     cityMarkers.forEach((marker, idx) => {
         let city = citiesData[idx];
         if (city.name === startName) {
-            marker.setStyle({ fillColor: '#2ecc71', radius: 10, weight: 3 });
+            marker.setStyle({ fillColor: '#4a9e72', radius: 10, weight: 3 });
         } else if (city.name === endName) {
             marker.setStyle({ fillColor: '#e74c3c', radius: 10, weight: 3 });
         } else {
@@ -177,28 +172,23 @@ function populateSelects() {
         startSel.value = citiesData[0].name;  // Iasi
         endSel.value = citiesData[4].name;    // Bacau
     }
-    updateMarkerHighlights();
+    highlightCities();
 }
 
 function setupEvents() {
     document.getElementById('searchBtn').addEventListener('click', doSearch);
     document.getElementById('resetBtn').addEventListener('click', doReset);
     document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-    document.getElementById('startCity').addEventListener('change', function () {
-        updateMarkerHighlights();
-        validateCities();
-        updateClickModeIndicator();
-    });
-    document.getElementById('endCity').addEventListener('change', function () {
-        updateMarkerHighlights();
-        validateCities();
-        updateClickModeIndicator();
-    });
+    ['startCity', 'endCity'].forEach(id =>
+        document.getElementById(id).addEventListener('change', () => {
+            highlightCities(); validateCities(); updateMode();
+        })
+    );
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') doSearch();
     });
     setupResizeHandle();
-    updateClickModeIndicator();
+    updateMode();
 }
 
 function validateCities() {
@@ -214,7 +204,7 @@ function validateCities() {
     }
 }
 
-function updateClickModeIndicator() {
+function updateMode() {
     document.getElementById('startCity').closest('.input-group')
         .classList.toggle('click-active', clickSelectMode === 'start');
     document.getElementById('endCity').closest('.input-group')
@@ -254,7 +244,6 @@ function setupResizeHandle() {
     });
 }
 
-// ===== THEME TOGGLE =====
 function toggleTheme() {
     isDarkMode = !isDarkMode;
     const btn = document.getElementById('themeToggle');
@@ -271,7 +260,6 @@ function toggleTheme() {
     }
 }
 
-// ===== RESET =====
 function doReset() {
     clearRoutes();
     allPathsData = [];
@@ -281,13 +269,13 @@ function doReset() {
     option4Data = null;
     transportMode = 'car';
     clickSelectMode = 'start';
-    showClickHint('Click pe pin pentru selecție rapidă');
+    updateHint('Click pe pin pentru selecție rapidă');
     document.getElementById('results').innerHTML =
         '<div class="placeholder"><div class="placeholder-icon">🧭</div>' +
         '<p>Selectează două orașe și apasă <strong>Execută cerere</strong></p></div>';
-    updateMarkerHighlights();
+    highlightCities();
     validateCities();
-    updateClickModeIndicator();
+    updateMode();
 }
 
 function clearRoutes() {
@@ -297,7 +285,6 @@ function clearRoutes() {
     highlightMarkers = [];
 }
 
-// ===== SEARCH =====
 async function doSearch() {
     let startName = document.getElementById('startCity').value;
     let endName = document.getElementById('endCity').value;
@@ -342,13 +329,11 @@ async function doSearch() {
     }
 }
 
-// ===== GET CITY COORDS =====
 function getCityCoords(name) {
     let c = citiesData.find(x => x.name === name);
     return c ? [c.lat, c.lon] : null;
 }
 
-// ===== DRAW ROUTE ON MAP =====
 // colorByType=true → color each segment by road type; false → single solid color
 function drawRoute(result, color, colorByType, addMarkers) {
     if (!result.segmente) return;
@@ -375,7 +360,7 @@ function drawRoute(result, color, colorByType, addMarkers) {
                 let isEndpoint = (idx === 0 || idx === result.nodes.length - 1);
                 let marker = L.circleMarker(coords, {
                     radius:      isEndpoint ? 12 : 8,
-                    fillColor:   isEndpoint ? (idx === 0 ? '#2ecc71' : '#e74c3c') : '#fff',
+                    fillColor:   isEndpoint ? (idx === 0 ? '#4a9e72' : '#e74c3c') : '#fff',
                     color:       '#111',
                     weight:      2,
                     fillOpacity: 0.95
@@ -390,7 +375,6 @@ function drawRoute(result, color, colorByType, addMarkers) {
     }
 }
 
-// ===== BUILD PATH HTML =====
 function buildPathHTML(nodes) {
     let html = '<div class="path-display">';
     nodes.forEach((n, i) => {
@@ -401,7 +385,6 @@ function buildPathHTML(nodes) {
     return html;
 }
 
-// ===== FORMAT TIME =====
 function formatTime(hours) {
     let h = Math.floor(hours);
     let m = Math.round((hours - h) * 60);
@@ -409,14 +392,11 @@ function formatTime(hours) {
     return m + '<span class="time-unit">min</span>';
 }
 
-// ===== OPTION 1: MINIMUM DISTANCE =====
 function showOption1(data) {
     let r = data.result;
     drawRoute(r, ACCENT_COLOR, true, true);
 
     let html = '';
-
-    // Big stat
     html += '<div class="result-card">';
     html += '<div class="result-title">🏆 Distanța minimă</div>';
     html += '<div class="big-stat"><span class="value">' + r.distance + '</span><span class="unit">km</span>';
@@ -424,19 +404,16 @@ function showOption1(data) {
     html += buildPathHTML(r.nodes);
     html += '</div>';
 
-    // Time estimate
     html += '<div class="result-card">';
     html += '<div class="result-title">⏱️ Timp estimat</div>';
     html += '<div class="big-stat"><span class="value">' + formatTime(r.totalTime) + '</span></div>';
     html += '</div>';
 
-    // Segments
     html += buildSegmentsTable(r.segmente);
 
     document.getElementById('results').innerHTML = html;
 }
 
-// ===== OPTION 2: ALL PATHS =====
 const PATHS_DISPLAY_LIMIT = 50;
 
 function getRoadTypeSummary(path) {
@@ -485,7 +462,6 @@ function renderAllPaths() {
     let showCount = Math.min(total, PATHS_DISPLAY_LIMIT);
     let html = '';
 
-    // Header card
     let titleText = total <= PATHS_DISPLAY_LIMIT
         ? '📋 ' + total + ' trasee găsite'
         : '📋 ' + total + ' trasee găsite · afișate primele ' + PATHS_DISPLAY_LIMIT;
@@ -500,11 +476,9 @@ function renderAllPaths() {
     html += '<div class="compare-hint">Click = afișează pe hartă &nbsp;·&nbsp; ⚖️ = selectează pentru comparație</div>';
     html += '</div>';
 
-    // Compare panel — shown when both A and B are selected
     if (compareA >= 0 && compareB >= 0)
         html += buildComparePanel(allPathsData[compareA], allPathsData[compareB]);
 
-    // Path cards — first PATHS_DISPLAY_LIMIT only
     sortedIdxs.slice(0, showCount).forEach((origIdx, rank) => {
         let p = allPathsData[origIdx];
 
@@ -520,9 +494,8 @@ function renderAllPaths() {
         let cmpLabel  = (origIdx === compareA) ? '🔵 A' : (origIdx === compareB) ? '🟠 B' : '⚖️';
         let cmpActive = (origIdx === compareA || origIdx === compareB) ? ' cmp-active' : '';
 
-        html += '<div class="' + cardClass + '" onclick="showPathFromCard(' + origIdx + ')">';
+        html += '<div class="' + cardClass + '" onclick="selectPath(' + origIdx + ')">';
 
-        // Header row: rank + stats + compare button
         html += '<div class="path-header">';
         html += '<span class="path-rank">#' + (rank + 1) + '</span>';
         html += '<div class="path-stats">';
@@ -534,7 +507,6 @@ function renderAllPaths() {
         html += '<button class="cmp-btn' + cmpActive + '" onclick="event.stopPropagation(); toggleCompare(' + origIdx + ')" title="Selectează pentru comparație">' + cmpLabel + '</button>';
         html += '</div>';
 
-        // Road type badges
         html += '<div class="path-road-types">';
         ['A', 'E', 'DN', 'DJ'].forEach(t => {
             if (roadSummary[t])
@@ -565,7 +537,7 @@ function sortPaths(mode) {
     renderAllPaths();
 }
 
-function showPathFromCard(idx) {
+function selectPath(idx) {
     currentSelectedIdx = idx;
     clearRoutes();
     drawRoute(allPathsData[idx], ACCENT_COLOR, true, true);
@@ -588,7 +560,7 @@ function toggleCompare(idx) {
     clearRoutes();
     if (compareA >= 0 && compareB >= 0) {
         drawRoute(allPathsData[compareA], '#3498db', false, false);
-        drawRoute(allPathsData[compareB], '#e67e22', false, false);
+        drawRoute(allPathsData[compareB], '#c47a35', false, false);
         let allCoords = [];
         [...allPathsData[compareA].nodes, ...allPathsData[compareB].nodes].forEach(n => {
             let c = getCityCoords(n);
@@ -624,33 +596,28 @@ function buildComparePanel(a, b) {
 
     html += '<div class="compare-grid">';
 
-    // Column headers
     html += '<div class="compare-val compare-val-a compare-col-header" style="color:#3498db">🔵 Traseu A</div>';
     html += '<div class="compare-label"></div>';
-    html += '<div class="compare-val compare-val-b compare-col-header" style="color:#e67e22">🟠 Traseu B</div>';
+    html += '<div class="compare-val compare-val-b compare-col-header" style="color:#c47a35">🟠 Traseu B</div>';
 
-    // Distance
     let dA = a.distance <= b.distance ? 'better' : 'worse';
     let dB = b.distance <= a.distance ? 'better' : 'worse';
     html += '<div class="compare-val compare-val-a ' + dA + '">' + a.distance + ' km</div>';
     html += '<div class="compare-label">📏 Distanță</div>';
     html += '<div class="compare-val compare-val-b ' + dB + '">' + b.distance + ' km</div>';
 
-    // Time
     let tA = Math.round(a.totalTime * 60), tB = Math.round(b.totalTime * 60);
     let tcA = tA <= tB ? 'better' : 'worse', tcB = tB <= tA ? 'better' : 'worse';
     html += '<div class="compare-val compare-val-a ' + tcA + '">' + tA + ' min</div>';
     html += '<div class="compare-label">⏱️ Timp</div>';
     html += '<div class="compare-val compare-val-b ' + tcB + '">' + tB + ' min</div>';
 
-    // Intermediate stops
     let sA = a.nodes.length - 2, sB = b.nodes.length - 2;
     let scA = sA <= sB ? 'better' : 'worse', scB = sB <= sA ? 'better' : 'worse';
     html += '<div class="compare-val compare-val-a ' + scA + '">' + sA + ' opr.</div>';
     html += '<div class="compare-label">📍 Opriri</div>';
     html += '<div class="compare-val compare-val-b ' + scB + '">' + sB + ' opr.</div>';
 
-    // Road types used
     let rtA = getRoadTypeSummary(a), rtB = getRoadTypeSummary(b);
     html += '<div class="compare-val compare-val-a compare-road-cell">';
     ['A','E','DN','DJ'].forEach(t => { if (rtA[t]) html += '<span class="road-tag road-' + t + '" style="font-size:0.68em;padding:1px 4px">' + t + '</span>'; });
@@ -662,7 +629,6 @@ function buildComparePanel(a, b) {
 
     html += '</div>'; // compare-grid
 
-    // Full paths
     html += '<div class="compare-paths">';
     html += '<div class="compare-path-a">🔵 ' + a.nodes.join(' → ') + '</div>';
     html += '<div class="compare-path-b">🟠 ' + b.nodes.join(' → ') + '</div>';
@@ -672,21 +638,18 @@ function buildComparePanel(a, b) {
     return html;
 }
 
-// ===== OPTION 3: ROAD TYPES =====
 function showOption3(data) {
     let r = data.result;
     drawRoute(r, ACCENT_COLOR, true, true);
 
     let html = '';
 
-    // Path
     html += '<div class="result-card">';
     html += '<div class="result-title">🛣️ Tipuri de drum pe traseu</div>';
     html += '<div class="big-stat"><span class="value">' + r.distance + '</span><span class="unit">km</span></div>';
     html += buildPathHTML(r.nodes);
     html += '</div>';
 
-    // Road type summary
     let roadStats = {};
     r.segmente.forEach(seg => {
         if (!roadStats[seg.roadType]) roadStats[seg.roadType] = 0;
@@ -715,10 +678,8 @@ function showOption3(data) {
     html += '</div>';
     html += '</div>';
 
-    // Detailed segments table
     html += buildSegmentsTable(r.segmente);
 
-    // Speed legend
     html += '<div class="result-card">';
     html += '<div class="result-title">🚗 Viteze (medie estimată / max. legală)</div>';
     html += '<div class="speed-info">';
@@ -732,17 +693,16 @@ function showOption3(data) {
     document.getElementById('results').innerHTML = html;
 }
 
-// ===== OPTION 4: TRAVEL TIME =====
 const transportSpeeds = {
-    car:     { A: 110, E: 85,  DN: 70, DJ: 55 },
-    bicycle: { A: 18,  E: 18,  DN: 18, DJ: 18 },
-    walking: { A: 5,   E: 5,   DN: 5,  DJ: 5  }
+    car: { A: 110, E: 85, DN: 70, DJ: 55 },
+    bicycle: { A: 18, E: 18, DN: 18, DJ: 18 },
+    walking: { A: 5, E: 5, DN: 5, DJ: 5 }
 };
 
 const transportLabels = {
-    car:     { icon: '🚗', label: 'Mașină'    },
+    car: { icon: '🚗', label: 'Mașină' },
     bicycle: { icon: '🚲', label: 'Bicicletă' },
-    walking: { icon: '🚶', label: 'Pe jos'    }
+    walking: { icon: '🚶', label: 'Pe jos' }
 };
 
 function getSpeedForMode(roadType, mode) {
@@ -765,7 +725,6 @@ function renderOption4() {
     let r    = option4Data;
     let mode = transportMode;
 
-    // Recalculate total time for current mode
     let totalTime = 0;
     r.segmente.forEach(seg => {
         totalTime += seg.distance / getSpeedForMode(seg.roadType, mode);
@@ -773,7 +732,6 @@ function renderOption4() {
 
     let html = '';
 
-    // Transport mode selector
     html += '<div class="result-card">';
     html += '<div class="result-title">🚦 Mod de transport</div>';
     html += '<div class="paths-controls">';
@@ -786,7 +744,6 @@ function renderOption4() {
     html += '</div>';
     html += '</div>';
 
-    // Big time display
     html += '<div class="result-card">';
     html += '<div class="result-title">⏱️ Timp total de parcurgere</div>';
     html += '<div class="time-display"><span class="time-big">' + formatTime(totalTime) + '</span></div>';
@@ -795,7 +752,6 @@ function renderOption4() {
     html += buildPathHTML(r.nodes);
     html += '</div>';
 
-    // Time per segment (recalculated for current mode)
     html += '<div class="result-card">';
     html += '<div class="result-title">🕐 Timp pe segmente</div>';
     html += '<table class="seg-table">';
@@ -816,7 +772,6 @@ function renderOption4() {
     html += '</table>';
     html += '</div>';
 
-    // Time breakdown by road type (recalculated)
     let timeByType = {};
     r.segmente.forEach(seg => {
         if (!timeByType[seg.roadType]) timeByType[seg.roadType] = 0;
@@ -845,7 +800,6 @@ function renderOption4() {
     html += '</div>';
     html += '</div>';
 
-    // Speed info for current mode
     html += '<div class="result-card">';
     if (mode === 'car') {
         html += '<div class="result-title">🚗 Viteze (medie estimată / max. legală)</div>';
@@ -869,7 +823,6 @@ function renderOption4() {
     document.getElementById('results').innerHTML = html;
 }
 
-// ===== SEGMENTS TABLE BUILDER =====
 function buildSegmentsTable(segments) {
     let html = '<div class="result-card">';
     html += '<div class="result-title">📋 Detalii segmente</div>';
